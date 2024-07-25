@@ -1,6 +1,7 @@
 'use client';
 
 import ContentSection from '@/shared/components/ContentSection';
+import Footer from '@/shared/components/Footer';
 import ProfileSection from '@/shared/components/ProfileSection';
 import GlobalStyle from '@/shared/styles/global';
 import { useState } from 'react';
@@ -23,7 +24,7 @@ export default function Home() {
         </S.FixedContainer>
         <ContentSection />
       </S.Container>
-      <S.Footer>&copy; 2024 Jhonatan Sarmento</S.Footer>
+      <Footer />
     </>
   );
 }
