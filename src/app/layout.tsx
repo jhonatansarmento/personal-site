@@ -1,4 +1,5 @@
 import StyledComponentsRegistry from '@/lib/registry';
+import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang='pt-br'>
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <Analytics />
       </body>
     </html>
   );
