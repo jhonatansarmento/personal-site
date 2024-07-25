@@ -69,7 +69,7 @@ export const Nav = styled.nav`
 `;
 
 interface NavItemProps {
-  active: boolean;
+  $active: boolean;
 }
 
 export const NavItem = styled.a<NavItemProps>`
@@ -79,14 +79,13 @@ export const NavItem = styled.a<NavItemProps>`
   text-decoration: none;
   margin: 10px 0;
   padding: 10px;
-  border-left: ${({ active }) =>
-    active ? '4px solid #FFF24E' : '4px solid transparent'};
+  border-left: ${({ $active }) =>
+    $active ? '4px solid #FFF24E' : '4px solid transparent'};
   transition: background-color 0.3s, border-left 0.3s;
-  padding-left: ${({ active }) => (active ? '1.5rem' : '')};
-  transition: background-color 0.3s, border-left 0.3s;
+  padding-left: ${({ $active }) => ($active ? '1.5rem' : '')};
 
   &:hover {
-    color: ${({ active }) => (active ? '' : '#fff24e')};
+    color: ${({ $active }) => ($active ? '' : '#fff24e')};
   }
 `;
 

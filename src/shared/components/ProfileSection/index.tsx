@@ -24,21 +24,21 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
       </S.Description>
       <S.Nav>
         <S.NavItem
-          active={activeSection === 'sobre'}
+          $active={activeSection === 'sobre'}
           href='#sobre'
           onClick={() => onSectionChange('sobre')}
         >
           SOBRE
         </S.NavItem>
         <S.NavItem
-          active={activeSection === 'experiencia'}
+          $active={activeSection === 'experiencia'}
           href='#experiencia'
           onClick={() => onSectionChange('experiencia')}
         >
           EXPERIÊNCIA
         </S.NavItem>
         <S.NavItem
-          active={activeSection === 'projetos'}
+          $active={activeSection === 'projetos'}
           href='#projetos'
           onClick={() => onSectionChange('projetos')}
         >
