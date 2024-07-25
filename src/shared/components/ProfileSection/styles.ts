@@ -7,11 +7,7 @@ export const Section = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: #ffffff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
+  margin: 20px;
 
   @media (max-width: 768px) {
     position: relative;
@@ -45,7 +41,6 @@ export const Name = styled.h1`
 
 export const Title = styled.h2`
   font-size: 1em;
-  color: #fff;
   margin: 5px 0;
   text-align: center;
 
@@ -80,7 +75,7 @@ interface NavItemProps {
 export const NavItem = styled.a<NavItemProps>`
   display: flex;
   align-items: center;
-  color: #ffffff;
+  font-weight: 600;
   text-decoration: none;
   margin: 10px 0;
   padding: 10px;
@@ -91,7 +86,7 @@ export const NavItem = styled.a<NavItemProps>`
   transition: background-color 0.3s, border-left 0.3s;
 
   &:hover {
-    border-left: 4px solid #fff24e;
+    color: ${({ active }) => (active ? '' : '#fff24e')};
   }
 `;
 

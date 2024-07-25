@@ -49,22 +49,6 @@ export default function ContentSection() {
           <S.ExperienceText>
             ago de 2020 - dez de 2020 · 5 meses · Manaus, Amazonas, Brasil
           </S.ExperienceText>
-          <S.Text>
-            Desenvolvimento Front-end (Angular) juntamente com Design (UI/UX).
-            Conhecimento e experiência nas áreas:
-          </S.Text>
-          <ul>
-            <li>
-              Desenvolvimento Web: Frontend: Angular | ReactJS | Typescript |
-              Javascript | HTML | CSS
-            </li>
-            <li>Backend: Java (Spring Boot) | NodeJS</li>
-            <li>Google Cloud</li>
-            <li>
-              Design (UI/UX): Desenvolvimento de Wireframes | Pacote Adobe (XD e
-              Illustrator)
-            </li>
-          </ul>
         </S.ExperienceItem>
         <S.ExperienceItem>
           <S.ExperienceTitle>Designer e Fotógrafo</S.ExperienceTitle>

@@ -3,10 +3,8 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import * as S from './styles';
 
 interface ProfileSectionProps {
-  activeSection: 'sobre' | 'experiencia' | 'projetos' | 'blog';
-  onSectionChange: (
-    section: 'sobre' | 'experiencia' | 'projetos' | 'blog'
-  ) => void;
+  activeSection: 'sobre' | 'experiencia' | 'projetos';
+  onSectionChange: (section: 'sobre' | 'experiencia' | 'projetos') => void;
 }
 
 const ProfileSection: React.FC<ProfileSectionProps> = ({
@@ -45,13 +43,6 @@ const ProfileSection: React.FC<ProfileSectionProps> = ({
           onClick={() => onSectionChange('projetos')}
         >
           PROJETOS
-        </S.NavItem>
-        <S.NavItem
-          active={activeSection === 'blog'}
-          href='#blog'
-          onClick={() => onSectionChange('blog')}
-        >
-          BLOG
         </S.NavItem>
       </S.Nav>
       <S.SocialLinks>

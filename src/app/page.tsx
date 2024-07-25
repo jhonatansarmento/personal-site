@@ -8,17 +8,19 @@ import * as S from './styles';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<
-    'sobre' | 'experiencia' | 'projetos' | 'blog'
+    'sobre' | 'experiencia' | 'projetos'
   >('sobre');
 
   return (
     <>
       <GlobalStyle />
       <S.Container>
-        <ProfileSection
-          activeSection={activeSection}
-          onSectionChange={setActiveSection}
-        />
+        <S.FixedContainer>
+          <ProfileSection
+            activeSection={activeSection}
+            onSectionChange={setActiveSection}
+          />
+        </S.FixedContainer>
         <ContentSection />
       </S.Container>
       <S.Footer>&copy; 2024 Jhonatan Sarmento</S.Footer>

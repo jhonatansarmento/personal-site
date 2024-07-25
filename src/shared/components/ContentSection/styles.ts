@@ -1,13 +1,19 @@
 import styled from 'styled-components';
 
 export const Section = styled.div`
-  flex: 3;
   padding: 20px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 318px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 `;
 
 export const Title = styled.h3`
-  color: #ff6f61;
+  color: #fff24e;
   font-size: 1.5em;
   margin-bottom: 10px;
 `;
@@ -28,12 +34,11 @@ export const ExperienceItem = styled.div`
 
 export const ExperienceTitle = styled.h4`
   font-size: 1.2em;
-  color: #ffffff;
 `;
 
 export const ExperienceSubtitle = styled.h5`
   font-size: 1em;
-  color: #6bc2b4;
+  color: #15d9b5;
 `;
 
 export const ExperienceText = styled.p`
