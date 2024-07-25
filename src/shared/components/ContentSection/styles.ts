@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Section = styled.div`
   flex: 3;
-  background-color: #4a4b57;
   padding: 20px;
   border-radius: 10px;
 `;

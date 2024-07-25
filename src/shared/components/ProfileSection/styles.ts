@@ -1,61 +1,140 @@
 import styled from 'styled-components';
 
 export const Section = styled.div`
-  flex: 1;
-  max-width: 300px;
-  margin-right: 20px;
-  background-color: #4a4b57;
   padding: 20px;
   border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+
+  @media (max-width: 768px) {
+    position: relative;
+    height: auto;
+    width: 100%;
+    align-items: center;
+  }
 `;
 
 export const Image = styled.img`
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    width: 120px;
+    height: 120px;
+  }
 `;
 
 export const Name = styled.h1`
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin: 10px 0;
-  color: #ff6f61;
+  color: #fff24e;
+
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+  }
 `;
 
 export const Title = styled.h2`
-  font-size: 1.2em;
-  color: #6bc2b4;
-  margin: 10px 0;
+  font-size: 1em;
+  color: #fff;
+  margin: 5px 0;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 0.9em;
+  }
 `;
 
 export const Description = styled.p`
-  font-size: 1em;
+  font-size: 0.9em;
   color: #d8d8d8;
+  margin: 10px 0;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const Nav = styled.nav`
-  a {
-    display: block;
-    color: #ffffff;
-    text-decoration: none;
-    margin: 10px 0;
-  }
+  width: 100%;
+  margin-top: 20px;
 
-  a:hover {
-    text-decoration: underline;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+interface NavItemProps {
+  active: boolean;
+}
+
+export const NavItem = styled.a<NavItemProps>`
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: ${({ active }) =>
+    active ? '4px solid #FFF24E' : '4px solid transparent'};
+  transition: background-color 0.3s, border-left 0.3s;
+  padding-left: ${({ active }) => (active ? '1.5rem' : '')};
+  transition: background-color 0.3s, border-left 0.3s;
+
+  &:hover {
+    border-left: 4px solid #fff24e;
   }
 `;
 
 export const SocialLinks = styled.div`
-  text-align: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   margin-top: 20px;
+
   a {
     color: #ffffff;
     text-decoration: none;
-    margin: 0 10px;
     font-size: 1.5em;
-  }
+    transition: color 0.3s;
 
-  a:hover {
-    color: #ff6f61;
+    &:hover {
+      color: #fff24e;
+    }
   }
+`;
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+`;
+
+export const Footer = styled.footer`
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  color: #d8d8d8;
+  background-color: #1a1b26;
 `;
