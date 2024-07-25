@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import * as S from './styles';
 
 export default function ContentSection() {
@@ -60,6 +61,28 @@ export default function ContentSection() {
           </S.ExperienceText>
         </S.ExperienceItem>
       </S.Experience>
+      <S.Projects id='projetos'>
+        <S.Title>Projetos</S.Title>
+        <S.ProjectItem>
+          <S.ProjectTitle>
+            <Link
+              href='https://www.youtube.com/watch?v=hK59KYwQP3U&list=PL0QN_lbTofYcw7bzm8y-l2BMslKfMfNgr&ab_channel=codezero'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Curso Completo de um Projeto Com Node.JS e React.JS
+            </Link>
+          </S.ProjectTitle>
+          <S.ProjectDescription>
+            Este curso completo ensina a criar uma aplicação utilizando a stack
+            MERN (MongoDB, Express, React JS e Node JS). O projeto é uma
+            aplicação de anotações chamada DayNotes, onde é possível fazer um
+            CRUD completo. O curso abrange desde a preparação do ambiente de
+            desenvolvimento até a implementação de todas as funcionalidades da
+            aplicação.
+          </S.ProjectDescription>
+        </S.ProjectItem>
+      </S.Projects>
     </S.Section>
   );
 }

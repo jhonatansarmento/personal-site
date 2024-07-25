@@ -45,3 +45,25 @@ export const ExperienceText = styled.p`
   font-size: 1em;
   color: #d8d8d8;
 `;
+
+export const Projects = styled.div`
+  margin-top: 20px;
+`;
+
+export const ProjectItem = styled.div`
+  margin-bottom: 20px;
+`;
+
+export const ProjectTitle = styled.h4`
+  font-size: 1.2em;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const ProjectDescription = styled.p`
+  font-size: 1em;
+  color: #d8d8d8;
+`;
