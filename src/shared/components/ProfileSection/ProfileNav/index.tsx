@@ -1,3 +1,4 @@
+import { profileContent } from '@/shared/constants/profileContent';
 import * as S from '../styles';
 
 interface ProfileNavProps {
@@ -11,27 +12,16 @@ export default function ProfileNav({
 }: ProfileNavProps) {
   return (
     <S.Nav>
-      <S.NavItem
-        $active={activeSection === 'sobre'}
-        href='#sobre'
-        onClick={() => onSectionChange('sobre')}
-      >
-        SOBRE
-      </S.NavItem>
-      <S.NavItem
-        $active={activeSection === 'experiencia'}
-        href='#experiencia'
-        onClick={() => onSectionChange('experiencia')}
-      >
-        EXPERIÊNCIA
-      </S.NavItem>
-      <S.NavItem
-        $active={activeSection === 'projetos'}
-        href='#projetos'
-        onClick={() => onSectionChange('projetos')}
-      >
-        PROJETOS
-      </S.NavItem>
+      {profileContent.navItems.map((item) => (
+        <S.NavItem
+          key={item.section}
+          $active={activeSection === item.section}
+          href={`#${item.section}`}
+          onClick={() => onSectionChange(item.section)}
+        >
+          {item.label}
+        </S.NavItem>
+      ))}
     </S.Nav>
   );
 }

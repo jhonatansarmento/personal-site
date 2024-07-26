@@ -1,9 +1,6 @@
+import { profileContent } from '@/shared/constants/profileContent';
 import * as S from '../styles';
 
 export default function ProfileDescription() {
-  return (
-    <S.Description>
-      Desenvolvedor FullStack | Angular, ReactJS, e Node.js | UI/UX Design
-    </S.Description>
-  );
+  return <S.Description>{profileContent.description}</S.Description>;
 }
