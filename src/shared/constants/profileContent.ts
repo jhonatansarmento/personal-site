@@ -73,5 +73,11 @@ export const projectsText = {
       description:
         'Este curso completo ensina a criar uma aplicação utilizando a stack MERN (MongoDB, Express, React JS e Node JS). O projeto é uma aplicação de anotações chamada DayNotes, onde é possível fazer um CRUD completo. O curso abrange desde a preparação do ambiente de desenvolvimento até a implementação de todas as funcionalidades da aplicação.',
     },
+    {
+      title: 'Leitor Online de Mangá',
+      link: 'https://mangareader-delta.vercel.app/',
+      description:
+        'Este projeto é um leitor online de mangá desenvolvido com tecnologias modernas. Ele permite aos usuários ler seus mangás favoritos diretamente do navegador com uma interface intuitiva e amigável. O projeto inclui funcionalidades como navegação por capítulos, pesquisa de títulos e muito mais, proporcionando uma experiência de leitura imersiva.',
+    },
   ],
 };
