@@ -109,26 +109,24 @@ export const SocialLinks = styled.div`
   }
 `;
 
-export const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-  }
+export const Education = styled.div`
+  margin-top: 20px;
 `;
 
-export const Footer = styled.footer`
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
-  border-top: 1px solid #333;
+export const EducationItem = styled.div`
+  margin-bottom: 20px;
+`;
+
+export const EducationInstitution = styled.h4`
+  font-size: 1.2em;
+`;
+
+export const EducationDegree = styled.h5`
+  font-size: 1em;
+  color: #15d9b5;
+`;
+
+export const EducationPeriod = styled.p`
+  font-size: 1em;
   color: #d8d8d8;
-  background-color: #1a1b26;
 `;

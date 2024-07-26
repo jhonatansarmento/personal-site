@@ -66,3 +66,25 @@ export const ProjectDescription = styled.p`
   font-size: 1em;
   color: #d8d8d8;
 `;
+
+export const Education = styled.div`
+  margin-top: 20px;
+`;
+
+export const EducationItem = styled.div`
+  margin-bottom: 20px;
+`;
+
+export const EducationInstitution = styled.h4`
+  font-size: 1.2em;
+`;
+
+export const EducationDegree = styled.h5`
+  font-size: 1em;
+  color: #15d9b5;
+`;
+
+export const EducationPeriod = styled.p`
+  font-size: 1em;
+  color: #d8d8d8;
+`;

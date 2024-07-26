@@ -7,6 +7,7 @@ export const profileContent = {
   title: 'Desenvolvedor Full Stack',
   navItems: [
     { section: 'sobre' as 'sobre', label: 'SOBRE' },
+    { section: 'formacao' as 'formacao', label: 'FORMAÇÃO' },
     { section: 'experiencia' as 'experiencia', label: 'EXPERIÊNCIA' },
     { section: 'projetos' as 'projetos', label: 'PROJETOS' },
   ],
@@ -78,6 +79,17 @@ export const projectsText = {
       link: 'https://mangareader-delta.vercel.app/',
       description:
         'Este projeto é um leitor online de mangá desenvolvido com tecnologias modernas. Ele permite aos usuários ler seus mangás favoritos diretamente do navegador com uma interface intuitiva e amigável. O projeto inclui funcionalidades como navegação por capítulos, pesquisa de títulos e muito mais, proporcionando uma experiência de leitura imersiva.',
+    },
+  ],
+};
+
+export const educationText = {
+  title: 'Formação Acadêmica',
+  items: [
+    {
+      institution: 'UniNorte (Centro Universitário do Norte)',
+      degree: 'Engenharia da Computação',
+      period: 'jan de 2016 - jan de 2020',
     },
   ],
 };
