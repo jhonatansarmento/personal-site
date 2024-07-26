@@ -20,6 +20,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='pt-br'>
+      <head>
+        <meta
+          property='og:title'
+          content='Jhonatan Sarmento - Desenvolvedor Full Stack'
+        />
+        <meta
+          property='og:description'
+          content='Portfólio de Jhonatan Sarmento, Desenvolvedor Full Stack especializado em React, Angular, Node.js, e mais. Confira meus projetos e experiências.'
+        />
+        <meta property='og:url' content='https://www.jsarmento.dev/' />
+        <meta property='og:type' content='website' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <link rel='icon' href='/favicon.ico?v=4' />
+        <link rel='apple-touch-icon' href='apple-touch-icon.png?v=4' />
+        <link rel='shortcut icon' href='apple-touch-icon.png' />
+      </head>
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
         <Analytics />
