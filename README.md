@@ -10,8 +10,8 @@ Este projeto é um portfólio online que apresenta informações sobre Jhonatan 
 
 Primeiro, clone o repositório e instale as dependências:
 
-\`\`\`bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+```bash
+git clone https://github.com/jhonatansarmento/personal-site
 cd seu-repositorio
 npm install
 
@@ -26,11 +26,11 @@ pnpm install
 # ou
 
 bun install
-\`\`\`
+```
 
 Depois, inicie o servidor de desenvolvimento:
 
-\`\`\`bash
+```bash
 npm run dev
 
 # ou
@@ -44,9 +44,9 @@ pnpm dev
 # ou
 
 bun dev
-\`\`\`
+```
 
-Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+Abra [localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
 ### Constantes
 
