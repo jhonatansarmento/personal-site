@@ -1,3 +1,5 @@
+import { Sections } from './navigationSections';
+
 export const profileContent = {
   description:
     'Desenvolvedor FullStack | Angular, ReactJS, e Node.js | UI/UX Design',
@@ -6,10 +8,10 @@ export const profileContent = {
   name: 'Jhonatan Sarmento',
   title: 'Desenvolvedor Full Stack',
   navItems: [
-    { section: 'sobre' as 'sobre', label: 'SOBRE' },
-    { section: 'formacao' as 'formacao', label: 'FORMAÇÃO' },
-    { section: 'experiencia' as 'experiencia', label: 'EXPERIÊNCIA' },
-    { section: 'projetos' as 'projetos', label: 'PROJETOS' },
+    { section: Sections.SOBRE, label: 'SOBRE' },
+    { section: Sections.FORMACAO, label: 'FORMAÇÃO' },
+    { section: Sections.EXPERIENCIA, label: 'EXPERIÊNCIA' },
+    { section: Sections.PROJETOS, label: 'PROJETOS' },
   ],
   socialLinks: [
     {
@@ -44,23 +46,23 @@ export const experienceText = {
   items: [
     {
       title: 'Desenvolvedor FullStack',
-      subtitle: 'Watch Brasil · Tempo integral',
-      text: 'ago de 2023 - jun de 2024 · 11 meses · Manaus, Amazonas, Brasil · Remota',
+      subtitle: 'Watch Brasil',
+      text: 'Cerca de 11 meses',
     },
     {
       title: 'Desenvolvedor de software',
-      subtitle: 'Instituto de Pesquisas Eldorado · Tempo integral',
-      text: 'jun de 2021 - fev de 2023 · 1 ano 9 meses · Manaus',
+      subtitle: 'Instituto de Pesquisas Eldorado ',
+      text: 'Cerca de 1 ano 9 meses',
     },
     {
       title: 'Estagiário em Desenvolvimento de Software | UI',
       subtitle: 'Instituto de Pesquisas Eldorado · Estágio',
-      text: 'ago de 2020 - dez de 2020 · 5 meses · Manaus, Amazonas, Brasil',
+      text: 'Cerca de 5 meses',
     },
     {
       title: 'Designer e Fotógrafo',
-      subtitle: 'FF Produções Brasil · Tempo integral',
-      text: 'ago de 2018 - jul de 2020 · 2 anos · Manaus e Região, Brasil',
+      subtitle: 'FF Produções Brasil',
+      text: '2 anos',
     },
   ],
 };
@@ -89,7 +91,7 @@ export const educationText = {
     {
       institution: 'UniNorte (Centro Universitário do Norte)',
       degree: 'Engenharia da Computação',
-      period: 'jan de 2016 - jan de 2020',
+      period: 'Formado em 2020',
     },
   ],
 };

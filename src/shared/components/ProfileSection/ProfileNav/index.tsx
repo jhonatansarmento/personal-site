@@ -1,11 +1,10 @@
+import { Sections } from '@/shared/constants/navigationSections';
 import { profileContent } from '@/shared/constants/profileContent';
 import * as S from '../styles';
 
 interface ProfileNavProps {
-  activeSection: 'sobre' | 'formacao' | 'experiencia' | 'projetos';
-  onSectionChange: (
-    section: 'sobre' | 'formacao' | 'projetos' | 'experiencia'
-  ) => void;
+  activeSection: Sections;
+  onSectionChange: (section: Sections) => void;
 }
 
 export default function ProfileNav({

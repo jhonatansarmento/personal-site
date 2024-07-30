@@ -1,16 +1,15 @@
-import ProfileDescription from './ProfileDescription';
-import ProfileImage from './ProfileImage';
-import ProfileName from './ProfileName';
-import ProfileNav from './ProfileNav';
-import ProfileTitle from './ProfileTitle';
-import SocialLinks from './SocialLinks';
+import ProfileDescription from '@/shared/components/ProfileSection/ProfileDescription';
+import ProfileImage from '@/shared/components/ProfileSection/ProfileImage';
+import ProfileName from '@/shared/components/ProfileSection/ProfileName';
+import ProfileNav from '@/shared/components/ProfileSection/ProfileNav';
+import ProfileTitle from '@/shared/components/ProfileSection/ProfileTitle';
+import SocialLinks from '@/shared/components/ProfileSection/SocialLinks';
+import { Sections } from '@/shared/constants/navigationSections';
 import * as S from './styles';
 
 interface ProfileSectionProps {
-  activeSection: 'sobre' | 'experiencia' | 'projetos' | 'formacao';
-  onSectionChange: (
-    section: 'sobre' | 'experiencia' | 'projetos' | 'formacao'
-  ) => void;
+  activeSection: Sections;
+  onSectionChange: (section: Sections) => void;
 }
 
 export default function ProfileSection({
