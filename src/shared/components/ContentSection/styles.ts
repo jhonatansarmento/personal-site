@@ -12,15 +12,15 @@ export const Section = styled.div`
 `;
 
 export const Title = styled.h3`
-  color: #fff24e;
-  font-size: 1.5em;
+  color: ${({ theme }) => theme.primaryColor};
+  font-size: 1.5rem;
   margin-bottom: 10px;
 `;
 
 export const Text = styled.p`
-  font-size: 1.1em;
+  font-size: 1.1rem;
   line-height: 1.6;
-  color: #d8d8d8;
+  color: ${({ theme }) => theme.textColor};
 `;
 
 export const Experience = styled.div`
@@ -28,21 +28,28 @@ export const Experience = styled.div`
 `;
 
 export const ExperienceItem = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
 `;
 
 export const ExperienceTitle = styled.h4`
-  font-size: 1.2em;
+  font-size: 1.2rem;
 `;
 
 export const ExperienceSubtitle = styled.h5`
-  font-size: 1em;
-  color: #15d9b5;
+  font-size: 1rem;
+  color: ${({ theme }) => theme.secondaryColor};
 `;
 
 export const ExperienceText = styled.p`
-  font-size: 1em;
-  color: #d8d8d8;
+  font-size: 1rem;
+  color: ${({ theme }) => theme.textColor};
 `;
 
 export const Projects = styled.div`
@@ -50,11 +57,18 @@ export const Projects = styled.div`
 `;
 
 export const ProjectItem = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
 `;
 
 export const ProjectTitle = styled.h4`
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-decoration: none;
 
   &:hover {
@@ -63,8 +77,8 @@ export const ProjectTitle = styled.h4`
 `;
 
 export const ProjectDescription = styled.p`
-  font-size: 1em;
-  color: #d8d8d8;
+  font-size: 1rem;
+  color: ${({ theme }) => theme.textColor};
 `;
 
 export const Education = styled.div`
@@ -73,18 +87,21 @@ export const Education = styled.div`
 
 export const EducationItem = styled.div`
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 `;
 
 export const EducationInstitution = styled.h4`
-  font-size: 1.2em;
+  font-size: 1.2rem;
 `;
 
 export const EducationDegree = styled.h5`
-  font-size: 1em;
-  color: #15d9b5;
+  font-size: 1rem;
+  color: ${({ theme }) => theme.secondaryColor};
 `;
 
 export const EducationPeriod = styled.p`
-  font-size: 1em;
-  color: #d8d8d8;
+  font-size: 1rem;
+  color: ${({ theme }) => theme.textColor};
 `;

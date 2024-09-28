@@ -32,7 +32,7 @@ export const Image = styled.img`
 export const Name = styled.h1`
   font-size: 1.5em;
   margin: 10px 0;
-  color: #fff24e;
+  color: ${({ theme }) => theme.primaryColor};
 
   @media (max-width: 768px) {
     font-size: 1.2em;
@@ -51,7 +51,7 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   font-size: 0.9em;
-  color: #d8d8d8;
+  color: ${({ theme }) => theme.textColor};
   margin: 10px 0;
 
   @media (max-width: 768px) {
@@ -79,13 +79,13 @@ export const NavItem = styled.a<NavItemProps>`
   text-decoration: none;
   margin: 10px 0;
   padding: 10px;
-  border-left: ${({ $active }) =>
-    $active ? '4px solid #FFF24E' : '4px solid transparent'};
+  border-left: ${({ $active, theme }) =>
+    $active ? `4px solid ${theme.primaryColor}` : '4px solid transparent'};
   transition: background-color 0.3s, border-left 0.3s;
   padding-left: ${({ $active }) => ($active ? '1.5rem' : '')};
 
   &:hover {
-    color: ${({ $active }) => ($active ? '' : '#fff24e')};
+    color: ${({ $active, theme }) => ($active ? '' : theme.primaryColor)};
   }
 `;
 
@@ -98,13 +98,13 @@ export const SocialLinks = styled.div`
   margin-top: 20px;
 
   a {
-    color: #ffffff;
+    color: ${({ theme }) => theme.white};
     text-decoration: none;
     font-size: 1.5em;
     transition: color 0.3s;
 
     &:hover {
-      color: #fff24e;
+      color: ${({ theme }) => theme.primaryColor};
     }
   }
 `;
@@ -123,10 +123,10 @@ export const EducationInstitution = styled.h4`
 
 export const EducationDegree = styled.h5`
   font-size: 1em;
-  color: #15d9b5;
+  color: ${({ theme }) => theme.secondaryColor};
 `;
 
 export const EducationPeriod = styled.p`
   font-size: 1em;
-  color: #d8d8d8;
+  color: ${({ theme }) => theme.textColor};
 `;

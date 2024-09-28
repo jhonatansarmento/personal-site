@@ -4,7 +4,7 @@ export const profileContent = {
   description:
     'Desenvolvedor FullStack | Angular, ReactJS, e Node.js | UI/UX Design',
   imageSrc:
-    'https://media.licdn.com/dms/image/D4D03AQGBk3H7MhqkSQ/profile-displayphoto-shrink_800_800/0/1708103587369?e=1727308800&v=beta&t=yRycc7faEEeUJ4H54m2r03k59YmNsBjcdC-FRvrDK4E',
+    'https://media.licdn.com/dms/image/v2/D4D03AQGBk3H7MhqkSQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1708103587369?e=1732752000&v=beta&t=UVso43Bb91uCyuMTJd2_Q8vLG5sMbTxakzvH_bFiR6w',
   name: 'Jhonatan Sarmento',
   title: 'Desenvolvedor Full Stack',
   navItems: [

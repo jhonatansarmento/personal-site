@@ -1,12 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    background-color: #121315;
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
+  * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
+  }
+  
+  body {
+    background-color: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.white};
+    font-family: 'Inter', sans-serif;
+
   }
 
   ul {
@@ -17,10 +23,6 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: inherit;
     text-decoration: none;
-  }
-
-  * {
-    box-sizing: border-box;
   }
 `;
 
