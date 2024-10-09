@@ -1,4 +1,5 @@
 import StyledComponentsRegistry from '@/lib/registry';
+import { profileContent } from '@/shared/constants/profileContent';
 import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         <link rel='icon' href='/favicon.ico?v=4' />
         <link rel='apple-touch-icon' href='apple-touch-icon.png?v=4' />
         <link rel='shortcut icon' href='apple-touch-icon.png' />
+        <link rel='preload' as='image' href={profileContent.imageSrc} />
       </head>
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
